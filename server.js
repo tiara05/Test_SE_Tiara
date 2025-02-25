@@ -16,6 +16,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use("/", userRoutes);
+app.use("/name", userRoutes);
+app.use("/employee", userRoutes);
 
 app.listen(PORT, ()=>{
     console.log("Server OK");
